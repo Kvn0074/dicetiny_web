@@ -138,6 +138,36 @@
 
 </div>
 
+<!--=============================================-->
+<!--================= FLYING ELEMENT ============-->
+<!--=============================================-->
+
+  <div class="appear" id="flying_spec">
+    <h2>Règles du jeux</h2>
+    <p>Cliquez sur le dé pour le lancer. tant que vous ne faite pas 1, vous pouvez
+        rejouer. <br>
+        Lorsque vous cliquez sur HOLD vous sauvez les points accumulés et vous donner la main
+        a l'autre joueur. <br>
+        le premier joueur à 100 remporte la partie. <br><br>
+        (si vous etes seul, jouez contre vous même, personne ne vous jugera.) <br><br>
+        Bonne chance. 
+    <div id="spec_ok" onclick="none_spec()">OK !</div>
+  </div>
+
+  <div class="disappear" id="flying_victory">
+    <h2 id="the_winner_is"></h2>
+    <p> A remportez la partie !! <br>
+    Maintenant, rejouez ou partez !!</p>
+    <div id="victory_ok" onclick="newgame()">Rejouer !</div>
+    <audio id="victory_sound" src="assets/Sounds/glados_congrat.wav"></audio>
+  </div>
+
+  <audio id="opsy_daisy" src="assets/Sounds/glados_opsy.wav"></audio>
+
+<!--=============================================-->
+<!--=============================================-->
+<!--=============================================-->
+
 <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
  <script src="assets/js/script.js"></script>  
 </body>
