@@ -176,9 +176,10 @@ __________________________*/
 .game .players_global 
 .game_player_two .global_player_two {
  text-align: center;
+ color: #f88400;
  text-shadow: var(--shadowH1);
  font-size: 4.5em;
- height: 120px;
+ height: 100px;
 }
 
     /*__/ M E D I A \__*/
