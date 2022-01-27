@@ -327,6 +327,7 @@ __________________________*/
   transform-style: preserve-3d;
   transform: translateZ(-100px);
   transition: transform 1s;
+  cursor: pointer;
 }
 
 .game .the_dice .game_dice_cont
