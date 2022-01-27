@@ -120,6 +120,13 @@ __________________________*/
 }
 
 /*__________________________
+________| GAME DICE |______
+__________________________*/
+
+/*__Le cube possède sa propre section en bas de page__*/
+
+
+/*__________________________
 ________| GAME CURRENT |____
 __________________________*/
 
@@ -286,6 +293,7 @@ __________________________*/
   left: 50%;
   transform: translate(-50%, -250%);
   transition: 1s;
+  z-index: -3;
   }
 
       /*__/ M E D I A \__*/
@@ -384,3 +392,69 @@ __________________________*/
 .cube.show-4 { transform: translateZ(-50px) rotateY(  90deg); }
 .cube.show-5 { transform: translateZ(-50px) rotateX( -90deg); }
 .cube.show-6 { transform: translateZ(-50px) rotateX(  90deg); } 
+
+    /*__/ M E D I A \__*/
+
+    @media screen and (min-width: 1100px){
+        .game .the_dice
+        .game_dice_cont {
+          height: 240px;
+        }
+  
+        .game .the_dice
+        .game_dice_cont .game_dice {
+          width: 200px;
+          height: 200px;
+          margin-top: 30px;
+          perspective:600px;
+          }
+  
+          .cube {
+            width:200px;
+            height: 200px;
+          }
+  
+          .game .the_dice .game_dice_cont
+          .game_dice .cube .cube_face {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 10px solid rgba(195, 0, 255, 0.185);
+            border-radius: 10px;
+            line-height: 200px;
+          }
+  
+          .game .the_dice .game_dice_cont
+          .game_dice .cube .cube_face_1 {
+            transform: rotateY(  0deg) translateZ(100px); 
+          }
+  
+          .game .the_dice .game_dice_cont
+          .game_dice .cube .cube_face_2 {
+            transform: rotateY(180deg) translateZ(100px); 
+          }
+  
+          .game .the_dice .game_dice_cont
+          .game_dice .cube .cube_face_3 {
+            transform: rotateY( 90deg) translateZ(100px); 
+          }
+  
+          .game .the_dice .game_dice_cont
+          .game_dice .cube .cube_face_4 {
+            transform: rotateY(-90deg) translateZ(100px); 
+          }
+  
+          .game .the_dice .game_dice_cont
+          .game_dice .cube .cube_face_5 {
+            transform: rotateX( 90deg) translateZ(100px); 
+          }
+  
+          .game .the_dice .game_dice_cont
+          .game_dice .cube .cube_face_6 {
+            transform: rotateX(-90deg) translateZ(100px); 
+          }
+      }
+  
+  /*=================================================
+  ===================================================
+  =================================================*/
