@@ -49,3 +49,38 @@
      <link rel="icon" type="image/png" href="#">
     <title>Dicetiny</title>
 </head>
+
+<body>
+
+<!--=============================================-->
+<!--================= CONTAINER =================-->
+<!--=============================================-->
+
+<div class="container-fluid game">
+    <img class="game_background" src="assets/pics/back_dice_resize.jpg" alt="fond d'écran jeux">
+
+<!--= ROW 1 ============ Game head =================-->  
+    
+    <div class="row game_head">
+
+        <div class="col-6 game_spec">
+            <img class="game_spec_img" src="assets/pics/setup.png" alt="gear wheel" onclick="add_spec()">
+        </div>
+
+        <div class="col-6 game_music">
+            <img class="game_music_img" id="speaker" src="assets/pics/speaker_none.png" alt="a speaker" onclick="add_music()">
+            <audio id="music" src="assets/Sounds/16bits_Turbo_Killer.mp3"></audio>
+        </div>
+
+    </div>
+
+<!--= ROW 2 ============ Game title =================--> 
+
+    <div class="row game_title">
+
+        <div class="col-md-12 title"><h1>DICETINY</h1></div>
+
+    </div>
+
+</div>
+  
