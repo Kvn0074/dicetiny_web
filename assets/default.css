@@ -198,30 +198,8 @@ ________| GAME FOOT |_______
 __________________________*/
 
 .game_foot .game_utilities
-.hold_button {
-  background: rgb(0, 0, 0);
-  opacity: 0.70;
-  text-align: center;
-  color: oldlace;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 1em;
-  font-weight: bolder;
-  border: 1.5px solid oldlace;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.game_foot .game_utilities
-.new {
+.hold_button, .game_foot .game_utilities
+.new, .game_foot .game_utilities .duration {
   background: rgb(0, 0, 0);
   opacity: 0.70;
   text-align: center;
@@ -245,12 +223,12 @@ __________________________*/
 
     /*__/ M E D I A \__*/
 
-    @media screen and (min-width: 375px) and (max-width : 639px) {
+    @media screen and (max-width : 639px) {
         .game_foot .game_utilities .new,
-        .game_foot .game_utilities .hold_button {
+        .game_foot .game_utilities .hold_button, 
+        .game_foot .game_utilities .duration {
           padding: 10px;
         }
-        
       }
 
 /*=================================================

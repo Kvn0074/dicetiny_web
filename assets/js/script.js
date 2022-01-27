@@ -78,6 +78,19 @@ function getRandomInt() {
     return Math.floor(Math.random() * 6) + 1;
   }
 
+function score_max() { 
+    let goal = Number(prompt('entrer le score a atteindre'));
+
+    if(isNaN(goal)){
+        alert('vous devez entrez un nombres')
+    } 
+    else {
+    score = goal;
+    console.log(score);
+    newgame();
+    }
+}
+
 function newgame(){
     joueur1.round  = 0;
     joueur1.global = 0;
