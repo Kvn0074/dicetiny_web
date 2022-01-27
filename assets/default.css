@@ -1,0 +1,288 @@
+/*=================================================
+=============| G L O B A L |=======================
+=================================================*/
+
+:root {
+    --shadowH2 : rgb(90, 1, 255) 0px 0px 5px, rgb(90, 1, 255) 0px 0px 10px, rgb(90, 1, 255) 0px 0px 15px,
+    #4c00ff 0px 0px 20px, #4c00ff 0px 0px 30px, #4c00ff 0px 0px 40px, 2px 2px 2px rgba(206,89,55,0); 
+    --shadowH1 : rgb(194, 0, 184) 0px 0px 5px, rgb(194, 0, 184) 0px 0px 10px, rgb(194, 0, 184) 0px 0px 15px,
+    #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px,
+    #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px; 
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+  
+  }
+  
+  body {
+    background: black;
+    font-family: 'Lato', sans-serif;
+    color: blueviolet;
+    min-width: 375px;
+  }
+  
+  label { 
+    margin-right: 10px; 
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+  }
+
+
+/*=================================================
+=============| T H E  G A M E |====================
+=================================================*/
+
+.game .game_background {
+ z-index: -3;
+ width: 1280px;
+ height: auto;
+ position: fixed;
+ overflow: hidden;
+ left: -12%;
+}
+
+/*__________________________
+________| GAME HEAD |______
+__________________________*/
+
+.game .game_head {
+ padding-bottom: 15px;
+}
+  
+.game .game_head .game_spec {
+ text-align: left;
+}
+
+.game .game_head .game_spec
+.game_spec_img {
+ width: 10%;
+ max-width: 50px;
+ margin-top: 10px;
+ cursor: pointer;
+}
+
+.game .game_head .game_music {
+ text-align: right;
+}
+
+.game .game_head .game_music
+.game_music_img {
+ width: 10%;
+ max-width: 50px;
+ margin-top: 10px;
+ cursor: pointer;
+}
+
+/*__________________________
+________| GAME TITLE |______
+__________________________*/
+
+.game .game_title .title {
+ text-align: center;
+ font-size: 1em;
+ letter-spacing: 20px;
+ margin-top: 10px;
+ text-shadow: var(--shadowH1);
+}
+
+/*__________________________
+________| GAME CURRENT |____
+__________________________*/
+
+.game .current_score .player_current {
+ background: none;
+ color: rgb(255, 0, 212);
+ font-size: 3em;
+ text-shadow: var(--shadowH2);
+ text-align: center;
+ margin-top: 30px;
+ width: 100%;
+ height: 50px;
+}
+  
+.game .players_global 
+.game_player_one {
+ text-align: left;
+ text-shadow: var(--shadowH2); 
+}
+
+/*__________________________
+________| GAME PLAYERS |____
+__________________________*/
+
+.game .players_global 
+.game_player_one {
+ text-align: left;
+ padding-left: 15px;
+ text-shadow: var(--shadowH2); 
+}
+
+.game .players_global 
+.game_player_two {
+ text-align: right; 
+ padding-right: 15px;
+ text-shadow: var(--shadowH2); 
+}
+
+.neon {
+ text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
+ 0 0 40px rgb(255, 0, 255), 0 0 80px rgb(255, 0, 255), 0 0 90px rgb(255, 0, 255),
+ 0 0 100px rgb(255, 0, 255), 0 0 150px rgb(255, 0, 255);
+}
+
+.game .players_global 
+.game_player_one .global_player_one,
+.game .players_global 
+.game_player_two .global_player_two {
+ text-align: center;
+ text-shadow: var(--shadowH1);
+ font-size: 4.5em;
+ height: 120px;
+}
+
+/*__________________________
+________| GAME FOOT |_______
+__________________________*/
+
+.game_foot .game_utilities
+.hold_button {
+  background: rgb(0, 0, 0);
+  opacity: 0.70;
+  text-align: center;
+  color: oldlace;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1em;
+  font-weight: bolder;
+  border: 1.5px solid oldlace;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game_foot .game_utilities
+.new {
+  background: rgb(0, 0, 0);
+  opacity: 0.70;
+  text-align: center;
+  color: oldlace;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1em;
+  font-weight: bolder;
+  border: 1.5px solid oldlace;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*=================================================
+=============| T H E  C U B E |====================
+=================================================*/
+
+
+.game .the_dice
+.game_dice_cont .game_dice {
+  width: 100px;
+  height: 100px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  perspective:300px;
+}
+
+.cube {
+  width:100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  transition: transform 1s;
+}
+
+.game .the_dice .game_dice_cont
+.game_dice .cube .cube_face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 5px solid rgba(195, 0, 255, 0.493);
+  border-radius: 5px;
+  line-height: 100px;
+}
+
+.game .the_dice .game_dice_cont
+.game_dice .cube .cube_face .face_pic {
+  width: 100%;
+  height: auto;
+  vertical-align: initial;
+}
+  
+.game .the_dice .game_dice_cont
+.game_dice .cube .cube_face_1,
+.cube_face_2, .cube_face_3, .cube_face_4,
+.cube_face_5, .cube_face_6 { 
+  background: none;  
+  opacity: 0.95;
+}
+
+.game .the_dice .game_dice_cont
+.game_dice .cube .cube_face_1 {
+  transform: rotateY(  0deg) translateZ(50px); 
+}
+
+.game .the_dice .game_dice_cont
+.game_dice .cube .cube_face_2 {
+  transform: rotateY(180deg) translateZ(50px); 
+}
+
+.game .the_dice .game_dice_cont
+.game_dice .cube .cube_face_3 {
+  transform: rotateY( 90deg) translateZ(50px); 
+}
+
+.game .the_dice .game_dice_cont
+.game_dice .cube .cube_face_4 {
+  transform: rotateY(-90deg) translateZ(50px); 
+}
+
+.game .the_dice .game_dice_cont
+.game_dice .cube .cube_face_5 {
+  transform: rotateX( 90deg) translateZ(50px); 
+}
+
+.game .the_dice .game_dice_cont
+.game_dice .cube .cube_face_6 {
+  transform: rotateX(-90deg) translateZ(50px); 
+}
+
+      /*___--- CLASS JS ---___*/
+
+.cube.show-1 { transform: translateZ(-50px) rotateY(   0deg); }
+.cube.show-2 { transform: translateZ(-50px) rotateY(-180deg); }
+.cube.show-3 { transform: translateZ(-50px) rotateY( -90deg); }
+.cube.show-4 { transform: translateZ(-50px) rotateY(  90deg); }
+.cube.show-5 { transform: translateZ(-50px) rotateX( -90deg); }
+.cube.show-6 { transform: translateZ(-50px) rotateX(  90deg); } 

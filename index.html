@@ -49,3 +49,94 @@
      <link rel="icon" type="image/png" href="#">
     <title>Dicetiny</title>
 </head>
+
+<body>
+
+<!--=============================================-->
+<!--================= CONTAINER =================-->
+<!--=============================================-->
+
+<div class="container-fluid game">
+    <img class="game_background" src="assets/pics/back_dice_resize.jpg" alt="fond d'écran jeux">
+
+<!--= ROW 1 ============ Game head =================-->  
+    
+    <div class="row game_head">
+
+        <div class="col-6 game_spec">
+            <img class="game_spec_img" src="assets/pics/setup.png" alt="gear wheel" onclick="add_spec()">
+        </div>
+
+        <div class="col-6 game_music">
+            <img class="game_music_img" id="speaker" src="assets/pics/speaker_none.png" alt="a speaker" onclick="add_music()">
+            <audio id="music" src="assets/Sounds/16bits_Turbo_Killer.mp3"></audio>
+        </div>
+
+    </div>
+
+<!--= ROW 2 ============ Game title =================--> 
+
+    <div class="row game_title">
+
+        <div class="col-md-12 title"><h1>DICETINY</h1></div>
+
+    </div>
+
+<!--= ROW 3 ============ Game Dice =================-->  
+
+  <div class="row the_dice">
+
+    <div class="col-sm-12 game_dice_cont">
+        <div class="game_dice">
+            <div class="cube" onclick="rolldice()">
+                <div class="cube_face cube_face_1"><img class="face_pic" src="assets/pics/dice_1.jpg" alt="face 1"></div>
+                <div class="cube_face cube_face_2"><img class="face_pic" src="assets/pics/dice_2.jpg" alt="face 2"></div>
+                <div class="cube_face cube_face_3"><img class="face_pic" src="assets/pics/dice_3.jpg" alt="face 3"></div>
+                <div class="cube_face cube_face_4"><img class="face_pic" src="assets/pics/dice_4.jpg" alt="face 4"></div>
+                <div class="cube_face cube_face_5"><img class="face_pic" src="assets/pics/dice_5.jpg" alt="face 5"></div>
+                <div class="cube_face cube_face_6"><img class="face_pic" src="assets/pics/dice_6.jpg" alt="face 6"></div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+
+<!--= ROW 4 ============ Game current score ==========--> 
+
+  <div class="row current_score">
+
+    <div class="col-12 player_current" id="current"></div>
+
+  </div>
+
+<!--= ROW 5 ============ Game players =================--> 
+
+  <div class="row players_global">
+
+    <div class="col-6 game_player_one">
+        <h2 id="player_one_name" class="neon" >Player 1</h2>
+        <div class="global_player_one" id="global_one"></div>
+    </div>
+
+    <div class="col-6 game_player_two">
+        <h2 id="player_two_name" >Player 2</h2>
+        <div class="global_player_two" id="global_two"></div>
+    </div>
+
+  </div>
+
+<!--= ROW 6 ============ Game foot =================--> 
+
+  <div class="row game_foot">
+
+    <div class="col-12 game_utilities">
+        <div class="hold_button" id="button">hold</div>
+        <div class="new" id="restart">new game</div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+  
