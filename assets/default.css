@@ -236,6 +236,16 @@ __________________________*/
   margin-right: auto;
 }
 
+    /*__/ M E D I A \__*/
+
+    @media screen and (min-width: 375px) and (max-width : 639px) {
+        .game_foot .game_utilities .new,
+        .game_foot .game_utilities .hold_button {
+          padding: 10px;
+        }
+        
+      }
+
 /*=================================================
 =============| F L Y I N G  E L E M E N T S |======
 =================================================*/
@@ -277,6 +287,14 @@ __________________________*/
   transform: translate(-50%, -250%);
   transition: 1s;
   }
+
+      /*__/ M E D I A \__*/
+
+      @media screen and (max-width : 650px) {
+        #flying_victory, #flying_spec {
+          width: 80%;
+        }
+      }
 
 /*=================================================
 =============| T H E  C U B E |====================
