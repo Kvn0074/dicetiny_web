@@ -35,7 +35,170 @@
     text-transform: uppercase;
   }
 
-  /*=================================================
+
+/*=================================================
+=============| T H E  G A M E |====================
+=================================================*/
+
+.game .game_background {
+ z-index: -3;
+ width: 1280px;
+ height: auto;
+ position: fixed;
+ overflow: hidden;
+ left: -12%;
+}
+
+/*__________________________
+________| GAME HEAD |______
+__________________________*/
+
+.game .game_head {
+ padding-bottom: 15px;
+}
+  
+.game .game_head .game_spec {
+ text-align: left;
+}
+
+.game .game_head .game_spec
+.game_spec_img {
+ width: 10%;
+ max-width: 50px;
+ margin-top: 10px;
+ cursor: pointer;
+}
+
+.game .game_head .game_music {
+ text-align: right;
+}
+
+.game .game_head .game_music
+.game_music_img {
+ width: 10%;
+ max-width: 50px;
+ margin-top: 10px;
+ cursor: pointer;
+}
+
+/*__________________________
+________| GAME TITLE |______
+__________________________*/
+
+.game .game_title .title {
+ text-align: center;
+ font-size: 1em;
+ letter-spacing: 20px;
+ margin-top: 10px;
+ text-shadow: var(--shadowH1);
+}
+
+/*__________________________
+________| GAME CURRENT |____
+__________________________*/
+
+.game .current_score .player_current {
+ background: none;
+ color: rgb(255, 0, 212);
+ font-size: 3em;
+ text-shadow: var(--shadowH2);
+ text-align: center;
+ margin-top: 30px;
+ width: 100%;
+ height: 50px;
+}
+  
+.game .players_global 
+.game_player_one {
+ text-align: left;
+ text-shadow: var(--shadowH2); 
+}
+
+/*__________________________
+________| GAME PLAYERS |____
+__________________________*/
+
+.game .players_global 
+.game_player_one {
+ text-align: left;
+ padding-left: 15px;
+ text-shadow: var(--shadowH2); 
+}
+
+.game .players_global 
+.game_player_two {
+ text-align: right; 
+ padding-right: 15px;
+ text-shadow: var(--shadowH2); 
+}
+
+.neon {
+ text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
+ 0 0 40px rgb(255, 0, 255), 0 0 80px rgb(255, 0, 255), 0 0 90px rgb(255, 0, 255),
+ 0 0 100px rgb(255, 0, 255), 0 0 150px rgb(255, 0, 255);
+}
+
+.game .players_global 
+.game_player_one .global_player_one,
+.game .players_global 
+.game_player_two .global_player_two {
+ text-align: center;
+ text-shadow: var(--shadowH1);
+ font-size: 4.5em;
+ height: 120px;
+}
+
+/*__________________________
+________| GAME FOOT |_______
+__________________________*/
+
+.game_foot .game_utilities
+.hold_button {
+  background: rgb(0, 0, 0);
+  opacity: 0.70;
+  text-align: center;
+  color: oldlace;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1em;
+  font-weight: bolder;
+  border: 1.5px solid oldlace;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game_foot .game_utilities
+.new {
+  background: rgb(0, 0, 0);
+  opacity: 0.70;
+  text-align: center;
+  color: oldlace;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1em;
+  font-weight: bolder;
+  border: 1.5px solid oldlace;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*=================================================
 =============| T H E  C U B E |====================
 =================================================*/
 
