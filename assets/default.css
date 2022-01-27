@@ -49,6 +49,32 @@
  left: -12%;
 }
 
+    /*__/ M E D I A \__*/
+
+    @media screen and (max-width : 639px) {
+        .game .game_background{
+        width: 1000px;
+        left: 50%;
+        margin-left: -500px;
+        }
+    }
+
+    @media screen and (min-width: 640px) and (max-width : 1023px) {
+        .game .game_background{
+        width: 1280px;
+        left: 50%;
+        margin-left: -640px;
+        }
+    }
+
+    @media screen and (min-width: 1100px){
+        .game .game_background{
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        }
+    }
+
 /*__________________________
 ________| GAME HEAD |______
 __________________________*/
